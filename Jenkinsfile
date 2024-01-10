@@ -7,5 +7,14 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      environment {
+        CI = 'true'
+      }
+      steps {
+        echo 'hello'
+      }
+    }
+
   }
 }
